@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/styles/output.css">
     <title>Cardapio</title>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">Projeto</h1>
+    <header class="w-full h-105 bg-zinc-800 bg-home bg-cover bg-center" style="background-image: url(/assets/bg.png);">
+        <div class="w-full h-full flex flex-col justify-center items-center">   
+            <img 
+            src="/assets/hamb-2.png" 
+            alt="LogoHamb2" 
+            class="w-32 h-32 rounded-3xl shadow-lg hover:scale-105 duration-150"/>
+            
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Hamburgueria Tradicional</h1>
+
+            <span class="text-white font-medium">Rua Exemplo 315, Londrina - PR</span>
+
+            <div class="bg-amber-600 px-4 py-1 rounded-lg mt-3 font-medium" id="dateSpan">Seg a Sexta - 18:00 as 23:00</div>
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-6 mb-4">Confira nossas opções:</h2>
+
+    <div id="menu">
+        <main>
+            <div class="flex gap-2">
+                <img src="/assets/hamb-1.png" alt="LogoHamb1" class="w-28 h-28 rounded-3xl hover:scale-90 duration-150">
+                <div>
+                    <p class="font-bold">Hamburguer Clássico</p>
+                    <p class="text-sm">Descrição</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18,50</p>
+                        <button class="bg-blue-950 px-5 rounded add-cart">
+                        <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
